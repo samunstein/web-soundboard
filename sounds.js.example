@@ -1,0 +1,4 @@
+const sounds = [
+    {name: "Funny sound", file: "funny.mp3", tags: ["laughter"]},
+    {name: "Beep", file: "beep.mp3", tags: []},
+];
