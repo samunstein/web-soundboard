@@ -1,3 +1,7 @@
+:root {
+    --box-size: 170px;
+}
+
 body {
     background-color: black;
     color: white;
@@ -35,14 +39,14 @@ body {
 
 .button-container {
     position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 25px;
+    width: var(--box-size);
+    height: var(--box-size);
+    margin: 20px;
 }
 
 .button {
-    height: 200px;
-    width: 200px;
+    height: var(--box-size);
+    width: var(--box-size);
     background-color:red;
     border-radius: 20px;
     border: 5px solid white;
