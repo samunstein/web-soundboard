@@ -16,6 +16,15 @@ body {
     font-family: "impact";
 }
 
+#loadAll {
+    position: fixed;
+    font-size: 14px;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
 .heading {
     text-align: center;
     font-size: 36px;

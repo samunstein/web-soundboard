@@ -8,6 +8,7 @@ var fakeSearch = "";
 var search = "";
 var searchChanged = new Date().getTime();
 var searchTimeoutHandle = 0;
+var allLoaded = false;
 
 Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)]
@@ -86,6 +87,17 @@ function handleKey(event) {
     }, DEBOUNCE_MILLIS);
 
     $("#searchText").text(search);
+}
+
+function loadAll() {
+    if (allLoaded) {
+        return;
+    }
+    allLoaded = true;
+    let body = $("body");
+    let soundfiles = sounds.map(sound => sound.file).forEach(file => {
+        body.append("<audio src=\"" + file + "\">");
+    });
 }
 
 $(document).ready(function() {
